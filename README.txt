@@ -127,3 +127,7 @@ XMAS:
   packet, which contains a spoofed source address, sends all of the packet flags at once: SYN, ACK, URG, PSH,
   FIN, ECE, CWR, and RST. This attack overwhelms the target system, consuming its resources and causing it to
   become unresponsive to legitimate traffic. This attack is also known as a 'TCP All-flag' attack.
+
+*** NOTE ***
+  Python is 10 to 100 times faster when compiled. When a script is not compiled, it needs to be interpreted
+  and its performance is slowed down. Compiling into a .pyc or even .elf/.exe format will increase performance.
