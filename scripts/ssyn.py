@@ -29,7 +29,7 @@ def _rslv():
 
 def main():
     if len(sys.argv) != 5:
-        sys.exit('\r\n Usage: <target <port> <time> <threading>\r\n')
+        sys.exit('\r\n Usage: <target> <port> <time> <threading>\r\n')
         
     if not os.geteuid() == 0:
         sys.exit('\r\n Script requires root elevation!\r\n')
