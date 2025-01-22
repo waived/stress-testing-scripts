@@ -51,7 +51,6 @@ def _rslv():
         
 def main():
     global _abort
-    _domain, _ip = _rslv()
     
     if len(sys.argv) != 5:
         sys.exit("\r\n   Usage: <target> <port> <time> <threads>\r\n")
@@ -59,6 +58,8 @@ def main():
     if not 'SUDO_UID' in os.environ:
         sys.exit("\r\n   Script requires root elevation!\r\n")
 
+    _domain, _ip = _rslv()
+    
     print("""\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
 .............. MMM......................
 ..  ..  ..... . MMN...  ..  ..  ..  .. .
